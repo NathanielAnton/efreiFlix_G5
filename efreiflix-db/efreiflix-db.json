@@ -6,7 +6,7 @@
       "year": 1999,
       "genres": ["Action", "Sci-Fi"],
       "description": "Un hacker découvre la vérité sur sa réalité et son rôle dans la guerre contre ses contrôleurs.",
-      "posterUrl": "https://example.com/posters/matrix.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/original/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
       "trailerUrl": "https://www.youtube.com/embed/vKQi3bBA1y8",
       "rating": 4.5
     },
@@ -16,7 +16,7 @@
       "year": 2010,
       "genres": ["Action", "Adventure", "Sci-Fi"],
       "description": "Un voleur spécialisé dans l’extraction d’informations prend part à une mission d’«inception».",
-      "posterUrl": "https://example.com/posters/inception.jpg",
+      "posterUrl": "https://flxt.tmsimg.com/assets/p7825626_p_v10_af.jpg",
       "trailerUrl": "https://www.youtube.com/embed/8hP9D6kZseM",
       "rating": 5
     },
@@ -26,7 +26,7 @@
       "year": 2014,
       "genres": ["Adventure", "Drama", "Sci-Fi"],
       "description": "Un groupe d'explorateurs voyage à travers un trou de ver à la recherche d'un nouvel habitat pour l'humanité.",
-      "posterUrl": "https://example.com/posters/interstellar.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/original/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
       "trailerUrl": "https://www.youtube.com/embed/zSWdZVtXT7E",
       "rating": 4
     },
@@ -36,7 +36,7 @@
       "year": 2017,
       "genres": ["Sci-Fi", "Drama"],
       "description": "En 2049, un nouveau Blade Runner déterre un secret susceptible de plonger ce qu'il reste de la société dans le chaos.",
-      "posterUrl": "https://example.com/posters/bladerunner2049.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/original/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
       "trailerUrl": "https://www.youtube.com/embed/gCcx85zbxz4",
       "rating": 4.2
     },
@@ -46,7 +46,7 @@
       "year": 1994,
       "genres": ["Crime", "Drama"],
       "description": "Les vies de deux gangsters, d'un boxeur et d'un couple de braqueurs se croisent dans une série d'histoires de violence et de rédemption.",
-      "posterUrl": "https://example.com/posters/pulpfiction.jpg",
+      "posterUrl": "https://m.media-amazon.com/images/I/71c05lTE03L._AC_SY679_.jpg",
       "trailerUrl": "https://www.youtube.com/embed/s7EdQ4FqbhY",
       "rating": 4.7
     }
