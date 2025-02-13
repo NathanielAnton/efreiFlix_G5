@@ -21,7 +21,7 @@ const Skeleton = () => {
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Recommandation</h1>
       <div className="bg-white shadow-md rounded-lg p-6">
-        <Carousel>
+        <Carousel autoPlay interval={3000} infiniteLoop>
           {movies.map(movie => (
             <div key={movie.id}>
               <img src={movie.posterUrl} alt={movie.title} />
