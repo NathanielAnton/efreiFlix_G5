@@ -134,14 +134,106 @@ body {
   background-color: #e50914;
   color: white;
   border: none;
-  padding: 10px 15px;
-  font-size: 1rem;
-  font-weight: bold;
+  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease-in-out;
 }
 
 .btn-update:hover {
-  background-color: #b20710;
+  background-color: #f40612;
+}
+
+/* Gestion des profils */
+.profile-thumbnail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile-thumbnail:hover .avatar-small {
+  opacity: 0.8;
+}
+
+.avatar-small {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.profile-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+/* Ajout du profil */
+.btn-add-profile {
+  background-color: #555;
+  color: white;
+  font-size: 1.5rem;
+  border: 2px solid #333;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-add-profile:hover {
+  background-color: #777;
+}
+
+/* Profil Edit */
+.profile-edit-container {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #222;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.btn-save {
+  background-color: #e50914;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-save:hover {
+  background-color: #f40612;
+}
+
+.btn-cancel {
+  background-color: #777;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-cancel:hover {
+  background-color: #555;
 }
