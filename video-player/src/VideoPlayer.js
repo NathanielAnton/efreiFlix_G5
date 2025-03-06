@@ -31,19 +31,22 @@ const VideoPlayer = ({ url }) => {
   };
 
   return (
-    <div className="relative w-full h-full max-w-4xl mx-auto bg-black rounded-lg overflow-hidden">
-      <ReactPlayer
-        ref={playerRef}
-        url={url}
-        playing={playing}
-        volume={volume}
-        muted={muted}
-        onProgress={handleProgress}
-        onDuration={setDuration}
-        width="100%"
-        height={600}
-        controls={false}
-      />
+    <div className="relative w-full h-full mx-auto bg-black rounded-lg overflow-hidden">
+      <div className="relative" style={{ paddingTop: "56.25%" }}>
+        <ReactPlayer
+          className="absolute top-0 left-0"
+          ref={playerRef}
+          url={url}
+          playing={playing}
+          volume={volume}
+          muted={muted}
+          onProgress={handleProgress}
+          onDuration={setDuration}
+          width="100%"
+          height="100%"
+          controls={false}
+        />
+      </div>
       <div className="absolute bottom-0 w-full p-4 bg-gradient-to-t from-black to-transparent">
         <input
           type="range"
