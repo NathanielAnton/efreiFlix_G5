@@ -41,7 +41,7 @@ const Skeleton = ({ userId = null, profileId = null }) => {
         if (recommendedIds.length > 0) {
           filteredMovies = movies.filter(movie => recommendedIds.includes(Number(movie.id)));
         } else {
-          filteredMovies = movies.sort((a, b) => b.rating - a.rating).slice(0, 5);
+          filteredMovies = movies.sort((a, b) => b.rating - a.rating);
         }
 
         setRecommendedMovies(filteredMovies);
@@ -57,35 +57,58 @@ const Skeleton = ({ userId = null, profileId = null }) => {
   }, [userId, profileId]);
 
   return (
-
-  <div className="container  rounded-lg p-6 bg-gray-950 text-white m-6">
-  <h1 className="text-3xl font-bold mb-4">Recommandations</h1>
-  <div className="bg-transparent p-6 rounded-lg shadow-lg">
-    {loading && <p>Chargement...</p>}
-    {error && <p className="text-red-500">Erreur : {error}</p>}
-    {!loading && !error && recommendedMovies.length > 0 && (
-      <Carousel
-        autoPlay
-        interval={3000}
-        infiniteLoop
-        showThumbs={false}
-        showStatus={false}
-        className="carousel w-36!"
-        centerMode
-        centerSlidePercentage={33.33} 
-      >
-        {recommendedMovies.map(movie => (
-          <div key={movie.id} className="carousel-item px-2 w-36!">
-            <img src={movie.posterUrl} alt={movie.title} className="w-36! h-40 object-cover rounded-lg" />
-          </div>
-        ))}
-      </Carousel>
-    )}
-    {!loading && !error && recommendedMovies.length === 0 && (
-      <p>Aucune recommandation disponible.</p>
-    )}
+    <div className="bg-black text-white">
+      <div className="relative w-full h-screen">
+      <video 
+      src="https://assets.codepen.io/6093409/hubspot-video-example.mp4"
+      className="absolute top-0 left-0 w-full h-full object-cover"
+          muted
+          loop
+          autoPlay
+          autoFocus>
+        </video>
+        
+      </div>
+    <div className="container mx-auto p-6 bg-black text-white">
+    <h1 className="text-3xl font-bold mb-4">Recommandations</h1>
+    <div className="p-6 rounded-lg shadow-lg" style={{ backgroundColor: 'var(--color-midnight)', color: 'var(--foreground)' }}>
+      {loading && <p>Chargement...</p>}
+      {error && <p className="text-red-500">Erreur : {error}</p>}
+      {!loading && !error && recommendedMovies.length > 0 && (
+        <>
+          
+          <Carousel
+          showArrows={false}
+            autoPlay
+            interval={3000}
+            infiniteLoop
+            showThumbs={false}
+            showIndicators={false}
+            showStatus={false}
+            className="carousel"
+            centerMode
+            centerSlidePercentage={15.15}
+          >
+            {recommendedMovies.map(movie => (
+              <div key={movie.id} className="carousel-item px-2">
+                <div className="relative w-full h-64">
+                  <img
+                    src={movie.posterUrl}
+                    alt={movie.title}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+            ))}
+          </Carousel>
+        </>
+      )}
+      {!loading && !error && recommendedMovies.length === 0 && (
+        <p>Aucune recommandation disponible.</p>
+      )}
+    </div>
   </div>
-</div>
+  </div>
 );
 };
 

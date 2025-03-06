@@ -49,6 +49,166 @@
       "posterUrl": "https://m.media-amazon.com/images/I/71c05lTE03L._AC_SY679_.jpg",
       "trailerUrl": "https://www.youtube.com/embed/s7EdQ4FqbhY",
       "rating": 4.7
+    },
+    {
+      "id": 6,
+      "title": "The Dark Knight",
+      "year": 2008,
+      "genres": ["Action", "Crime", "Drama"],
+      "description": "Batman doit affronter le Joker, un criminel sadique qui veut plonger Gotham City dans l'anarchie.",
+      "posterUrl": "https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+      "trailerUrl": "https://www.youtube.com/embed/EXeTwQWrcwY",
+      "rating": 4.9
+    },
+    {
+      "id": 7,
+      "title": "Fight Club",
+      "year": 1999,
+      "genres": ["Drama"],
+      "description": "Un homme déprimé rencontre un vendeur de savon charismatique et ils forment un club de combat clandestin.",
+      "posterUrl": "https://image.tmdb.org/t/p/original/bptfVGEQuv6vDTIMVCHjJ9Dz8PX.jpg",
+      "trailerUrl": "https://www.youtube.com/embed/qtRKdVHc-cE",
+      "rating": 4.8
+    },
+    {
+      "id": 8,
+      "title": "Forrest Gump",
+      "year": 1994,
+      "genres": ["Drama", "Romance"],
+      "description": "L'histoire de Forrest Gump, un homme simple au grand cœur, qui traverse les événements marquants de l'histoire américaine.",
+      "posterUrl": "https://image.tmdb.org/t/p/original/saHP97rTPS5eLmrLQEcANmKrsFl.jpg",
+      "trailerUrl": "https://www.youtube.com/embed/bLvqoHBptjg",
+      "rating": 4.6
+    },
+    {
+      "id": 9,
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "genres": ["Drama"],
+      "description": "Un homme innocent est condamné à perpétuité et se lie d'amitié avec un autre détenu, trouvant rédemption et espoir.",
+      "posterUrl": "https://image.tmdb.org/t/p/original/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
+      "trailerUrl": "https://www.youtube.com/embed/6hB3S9bIaco",
+      "rating": 4.9
+    },
+    {
+      "id": 10,
+      "title": "The Godfather",
+      "year": 1972,
+      "genres": ["Crime", "Drama"],
+      "description": "L'histoire de la famille Corleone, une puissante famille mafieuse italienne.",
+      "posterUrl": "https://image.tmdb.org/t/p/original/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+      "trailerUrl": "https://www.youtube.com/embed/sY1S34973zA",
+      "rating": 4.8
+    },
+    {
+      "id": 11,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "year": 2001,
+      "genres": ["Adventure", "Drama", "Fantasy"],
+      "description": "Un jeune hobbit et ses amis se lancent dans une quête pour détruire un anneau puissant.",
+      "posterUrl": "https://image.tmdb.org/t/p/original/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+      "trailerUrl": "https://www.youtube.com/embed/V75dMMIW2B4",
+      "rating": 4.8
+    },
+    {
+      "id": 12,
+      "title": "The Lord of the Rings: The Two Towers",
+      "year": 2002,
+      "genres": ["Adventure", "Drama", "Fantasy"],
+      "description": "Les membres de la communauté se séparent pour continuer leur quête contre Sauron.",
+      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/a/a1/Lord_Rings_Two_Towers.jpg",
+      "trailerUrl": "https://www.youtube.com/embed/LbfMDwc4azU",
+      "rating": 4.7
+    },
+    {
+      "id": 13,
+      "title": "The Lord of the Rings: The Return of the King",
+      "year": 2003,
+      "genres": ["Adventure", "Drama", "Fantasy"],
+      "description": "La bataille finale pour la Terre du Milieu commence alors que Frodo et Sam approchent du Mont Doom.",
+      "posterUrl": "https://image.tmdb.org/t/p/original/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+      "trailerUrl": "https://www.youtube.com/embed/r5X-hFf6Bwo",
+      "rating": 4.9
+    },
+    {
+      "id": 14,
+      "title": "Gladiator",
+      "year": 2000,
+      "genres": ["Action", "Adventure", "Drama"],
+      "description": "Un général romain trahi cherche à se venger de l'empereur corrompu qui a tué sa famille.",
+      "posterUrl": "https://image.tmdb.org/t/p/original/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+      "trailerUrl": "https://www.youtube.com/embed/owK1qxDselE",
+      "rating": 4.7
+    },
+    {
+      "id": 15,
+      "title": "The Lion King",
+      "year": 1994,
+      "genres": ["Animation", "Adventure", "Drama"],
+      "description": "Un jeune lion nommé Simba doit reprendre son royaume après la mort de son père.",
+      "posterUrl": "https://image.tmdb.org/t/p/original/2bXbqYdUdNVa8VIWXVfclP2ICtT.jpg",
+      "trailerUrl": "https://www.youtube.com/embed/4sj1MT05lAA",
+      "rating": 4.8
+    },
+    {
+      "id": 16,
+      "title": "Star Wars: Episode IV - A New Hope",
+      "year": 1977,
+      "genres": ["Action", "Adventure", "Fantasy"],
+      "description": "Luke Skywalker rejoint une mission pour sauver la princesse Leia et vaincre l'Empire Galactique.",
+      "posterUrl": "https://image.tmdb.org/t/p/original/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+      "trailerUrl": "https://www.youtube.com/embed/vZ734NWnAHA",
+      "rating": 4.7
+    },
+    {
+      "id": 17,
+      "title": "Jurassic Park",
+      "year": 1993,
+      "genres": ["Adventure", "Sci-Fi", "Thriller"],
+      "description": "Des visiteurs d'un parc à thème de dinosaures doivent survivre lorsque les créatures s'échappent.",
+      "posterUrl": "https://image.tmdb.org/t/p/original/9i3plLl89DHMz7mahksDaAo7HIS.jpg",
+      "trailerUrl": "https://www.youtube.com/embed/QWBKEmWWL38",
+      "rating": 4.6
+    },
+    {
+      "id": 18,
+      "title": "The Avengers",
+      "year": 2012,
+      "genres": ["Action", "Adventure", "Sci-Fi"],
+      "description": "Les super-héros de Marvel s'unissent pour combattre une menace extraterrestre.",
+      "posterUrl": "https://image.tmdb.org/t/p/original/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+      "trailerUrl": "https://www.youtube.com/embed/eOrNdBpGMv8",
+      "rating": 4.5
+    },
+    {
+      "id": 19,
+      "title": "Titanic",
+      "year": 1997,
+      "genres": ["Drama", "Romance"],
+      "description": "Une romance tragique se développe à bord du RMS Titanic.",
+      "posterUrl": "https://image.tmdb.org/t/p/original/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+      "trailerUrl": "https://www.youtube.com/embed/kVrqfYjkTdQ",
+      "rating": 4.7
+    },
+    {
+      "id": 20,
+      "title": "Avatar",
+      "year": 2009,
+      "genres": ["Action", "Adventure", "Sci-Fi"],
+      "description": "Un marine paraplégique est envoyé sur la lune Pandora et se retrouve déchiré entre deux mondes.",
+      "posterUrl": "https://image.tmdb.org/t/p/original/6EiRUJpuoeQPghrs3YNktfnqOVh.jpg",
+      "trailerUrl": "https://www.youtube.com/embed/5PSNL1qE6VY",
+      "rating": 4.8
+    },
+    {
+      "id": 21,
+      "title": "Drive",
+      "year": 2011,
+      "genres": ["Crime", "Drama"],
+      "description": "Un cascadeur de cinéma qui travaille comme chauffeur pour des braqueurs de banque se retrouve en danger après avoir aidé la femme qu'il aime.",
+      "posterUrl": "https://image.tmdb.org/t/p/original/602vevIURmpDfzbnv5Ubi6wIkQm.jpg",
+      "trailerUrl": "https://www.youtube.com/embed/KBiOF3y1W0Y",
+      "rating": 4.4
     }
   ],
   "comments": [
