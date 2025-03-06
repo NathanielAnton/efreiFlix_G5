@@ -57,27 +57,36 @@ const Skeleton = ({ userId = null, profileId = null }) => {
   }, [userId, profileId]);
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Recommandations</h1>
-      <div className="bg-white shadow-md rounded-lg p-6">
-        {loading && <p>Chargement...</p>}
-        {error && <p className="text-red-500">Erreur : {error}</p>}
-        {!loading && !error && recommendedMovies.length > 0 && (
-          <Carousel autoPlay interval={3000} infiniteLoop>
-            {recommendedMovies.map(movie => (
-              <div key={movie.id}>
-                <img src={movie.posterUrl} alt={movie.title} />
-                <p className="legend">{movie.title}</p>
-              </div>
-            ))}
-          </Carousel>
-        )}
-        {!loading && !error && recommendedMovies.length === 0 && (
-          <p>Aucune recommandation disponible.</p>
-        )}
-      </div>
-    </div>
-  );
+
+  <div className="container  rounded-lg p-6 bg-gray-950 text-white m-6">
+  <h1 className="text-3xl font-bold mb-4">Recommandations</h1>
+  <div className="bg-transparent p-6 rounded-lg shadow-lg">
+    {loading && <p>Chargement...</p>}
+    {error && <p className="text-red-500">Erreur : {error}</p>}
+    {!loading && !error && recommendedMovies.length > 0 && (
+      <Carousel
+        autoPlay
+        interval={3000}
+        infiniteLoop
+        showThumbs={false}
+        showStatus={false}
+        className="carousel w-36!"
+        centerMode
+        centerSlidePercentage={33.33} 
+      >
+        {recommendedMovies.map(movie => (
+          <div key={movie.id} className="carousel-item px-2 w-36!">
+            <img src={movie.posterUrl} alt={movie.title} className="w-36! h-40 object-cover rounded-lg" />
+          </div>
+        ))}
+      </Carousel>
+    )}
+    {!loading && !error && recommendedMovies.length === 0 && (
+      <p>Aucune recommandation disponible.</p>
+    )}
+  </div>
+</div>
+);
 };
 
 export default Skeleton;
