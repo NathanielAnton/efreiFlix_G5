@@ -1,0 +1,40 @@
+name: EfreiFlix MFE Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        app: [shell, header, mfe-skeleton]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+
+      - name: Install Dependencies
+        run: |
+          cd ${{ matrix.app }}
+          npm install
+        shell: bash
+
+      - name: Run Tests
+        run: |
+          cd ${{ matrix.app }}
+          if grep -q "\"test\":" "package.json"; then
+            npm test
+          else
+            echo "No test script found, skipping tests"
+          fi
+        shell: bash 

@@ -1,0 +1,79 @@
+/* SearchBar.css */
+
+.search-bar-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.5rem 4%;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.search-bar-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  transition: width 0.3s ease;
+}
+
+.search-bar-wrapper.focused {
+  width: 400px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  pointer-events: none;
+}
+
+.search-bar-input {
+  width: 100%;
+  padding: 10px 40px 10px 35px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.search-bar-input:focus {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-color: #fff;
+  outline: none;
+}
+
+.search-bar-input::placeholder {
+  color: #999;
+}
+
+.clear-button {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.clear-button.visible {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .search-bar-wrapper,
+  .search-bar-wrapper.focused {
+    width: 100%;
+  }
+  
+  .search-bar-container {
+    padding: 0.5rem 2%;
+  }
+} 

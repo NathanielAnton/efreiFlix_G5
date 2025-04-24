@@ -1,0 +1,172 @@
+.catalogue-container {
+  background-color: #141414;
+  min-height: 100vh;
+  padding: 20px 4%;
+  color: white;
+}
+
+.catalogue-title {
+  font-size: 1.6vw;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #e5e5e5;
+}
+
+.movies-section {
+  position: relative;
+}
+
+.movies-row {
+  display: flex;
+  overflow-x: hidden;
+  padding: 20px 0 20px 16px; /* Ajoute du padding à gauche pour éviter que l'animation fasse sortir la carte */
+  scroll-behavior: smooth;
+  margin: 0 -20px;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.movies-section:hover .scroll-button {
+  opacity: 1;
+}
+
+.scroll-button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.scroll-button.left {
+  left: 0;
+}
+
+.scroll-button.right {
+  right: 0;
+}
+
+.scroll-button svg {
+  width: 25px;
+  height: 25px;
+  fill: white;
+}
+
+.movie-card {
+  position: relative;
+  min-width: 200px;
+  margin-right: 24px; /* Augmente l'espacement entre les cartes pour éviter le chevauchement lors du scale */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  transform: scale(1.08);
+  z-index: 2;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.movie-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 0 0 4px 4px;
+}
+
+.movie-card:hover .movie-info {
+  opacity: 1;
+}
+
+.movie-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.movie-year {
+  font-size: 0.9rem;
+  color: #a3a3a3;
+  margin-bottom: 4px;
+}
+
+.movie-description {
+  font-size: 0.8rem;
+  color: #d2d2d2;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.trailer-link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 4px 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.trailer-link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.rank-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(229, 9, 20, 0.9);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.movie-rating {
+  font-size: 0.9rem;
+  color: #ffd700;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    min-width: 150px;
+    margin-right: 16px;
+  }
+  
+  .movie-poster {
+    height: 225px;
+  }
+  
+  .catalogue-title {
+    font-size: 20px;
+  }
+}
