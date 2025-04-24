@@ -1,5 +1,7 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { ModuleFederationPlugin } = require("webpack").container;
+const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
+const path = require('path');
+const { dependencies } = require('./package.json');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const isProd = process.env.NODE_ENV === 'production';
 const prodUrl = 'https://efrei-catalogue.vercel.app/';
@@ -7,41 +9,46 @@ const getRemoteEntryUrl = (appName) => {
   if (process.env.NODE_ENV === 'production') {
     // Replace these URLs with your actual Vercel deployment URLs
     const urls = {
-        ficheProduit: 'https://efrei-fiche-produit.vercel.app'
+      ficheProduit: 'https://efrei-fiche-produit.vercel.app',
     };
     return `${urls[appName]}/remoteEntry.js`;
   }
   const ports = {
     header: 3001,
-    skeleton: 3002
+    skeleton: 3002,
+    ficheProduit: 3005
   };
   return `http://localhost:${ports[appName]}/remoteEntry.js`;
 };
 module.exports = {
-  entry: "./src/index.js",
-  mode: process.env.NODE_ENV || "development",
+  entry: './src/index.js',
+  mode: process.env.NODE_ENV || 'development',
   output: {
     publicPath: isProd ? prodUrl : 'auto',
-    filename: '[name].[contenthash].js'
+    filename: '[name].[contenthash].js',
   },
   devServer: {
     port: 3003,
-    hot: true,
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-      "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
+    static: {
+      directory: path.join(__dirname, 'dist'),
     },
-    historyApiFallback: true,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+      'Access-Control-Allow-Headers':
+        'X-Requested-With, content-type, Authorization',
+    },
   },
   module: {
     rules: [
       {
         test: /\.jsx?$/,
-        loader: "babel-loader",
         exclude: /node_modules/,
-        options: {
-          presets: ["@babel/preset-react"],
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-react', '@babel/preset-env'],
+          },
         },
       },
       {
@@ -52,27 +59,24 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "catalogue",
-      filename: "remoteEntry.js",
+      name: 'catalogue',
+      filename: 'remoteEntry.js',
       exposes: {
-        "./Catalogue": "./src/Catalogue",
+        './Catalogue': './src/Catalog',
       },
       remotes: {
         ficheProduit: `ficheProduit@${getRemoteEntryUrl('ficheProduit')}`,
       },
       shared: {
-        react: { 
-          singleton: true,
-          requiredVersion: false
-        },
-        "react-dom": { 
-          singleton: true,
-          requiredVersion: false
-        }
+        react: { singleton: true, eager: true, requiredVersion: false },
+        'react-dom': { singleton: true, eager: true, requiredVersion: false },
       },
     }),
     new HtmlWebpackPlugin({
-      template: "./public/index.html",
+      template: './public/index.html',
     }),
   ],
-}; 
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
+};

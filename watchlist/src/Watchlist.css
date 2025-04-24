@@ -1,0 +1,143 @@
+/* Watchlist.css - style inspiré de Catalogue.css */
+.watchlist-container {
+  background-color: #141414;
+  padding: 20px 4%;
+  color: white;
+}
+
+.watchlist-title {
+  font-size: 1.6vw;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #e5e5e5;
+}
+
+.watchlist-row {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px 0 20px 24px; /* Ajoute du padding à gauche */
+  gap: 0;
+  scroll-behavior: smooth;
+  margin: 0 -20px;
+}
+
+.movie-card {
+  position: relative;
+  min-width: 200px;
+  max-width: 200px;
+  width: 200px;
+  margin-right: 24px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #232323;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card:hover {
+  transform: scale(1.08);
+  z-index: 2;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.movie-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 0 0 4px 4px;
+}
+
+.movie-card:hover .movie-info {
+  opacity: 1;
+}
+
+.movie-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.movie-year {
+  font-size: 0.9rem;
+  color: #a3a3a3;
+  margin-bottom: 4px;
+}
+
+.movie-description {
+  font-size: 0.8rem;
+  color: #d2d2d2;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.movie-rating {
+  font-size: 0.9rem;
+  color: #ffd700;
+  margin-bottom: 4px;
+}
+
+.watchlist-remove-btn {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 0;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.watchlist-remove-btn:hover:enabled {
+  background-color: #b0060f;
+}
+
+.watchlist-error {
+  background: #b0060f;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.watchlist-empty {
+  color: #a3a3a3;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    min-width: 150px;
+    max-width: 150px;
+    width: 150px;
+    margin-right: 16px;
+  }
+  .movie-poster {
+    height: 225px;
+  }
+  .watchlist-title {
+    font-size: 20px;
+  }
+}

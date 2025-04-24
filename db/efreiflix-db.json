@@ -1,334 +1,463 @@
 {
   "movies": [
     {
-      "id": 1,
+      "id": "1",
       "title": "The Matrix",
       "year": 1999,
-      "genres": ["Action", "Sci-Fi"],
+      "genres": [
+        "Action",
+        "Sci-Fi"
+      ],
       "description": "Un hacker découvre la vérité sur sa réalité et son rôle dans la guerre contre ses contrôleurs.",
       "trailerUrl": "https://www.youtube.com/embed/vKQi3bBA1y8",
       "rating": 4.5
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Inception",
       "year": 2010,
-      "genres": ["Action", "Adventure", "Sci-Fi"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
       "description": "Un voleur spécialisé dans l'extraction d'informations prend part à une mission d'«inception».",
       "trailerUrl": "https://www.youtube.com/embed/8hP9D6kZseM",
-      "rating": 5
+      "rating": 4
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Interstellar",
       "year": 2014,
-      "genres": ["Adventure", "Drama", "Sci-Fi"],
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Sci-Fi"
+      ],
       "description": "Un groupe d'explorateurs voyage à travers un trou de ver à la recherche d'un nouvel habitat pour l'humanité.",
       "trailerUrl": "https://www.youtube.com/embed/zSWdZVtXT7E",
       "rating": 4
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Blade Runner 2049",
       "year": 2017,
-      "genres": ["Sci-Fi", "Drama"],
+      "genres": [
+        "Sci-Fi",
+        "Drama"
+      ],
       "description": "En 2049, un nouveau Blade Runner déterre un secret susceptible de plonger ce qu'il reste de la société dans le chaos.",
       "trailerUrl": "https://www.youtube.com/embed/gCcx85zbxz4",
       "rating": 4.2
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Oppenheimer",
       "year": 2023,
-      "genres": ["Biography", "Drama", "History"],
+      "genres": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
       "description": "L'histoire de J. Robert Oppenheimer, le physicien qui a dirigé le Projet Manhattan pour développer la première bombe atomique.",
       "trailerUrl": "https://www.youtube.com/embed/uYPbbksJxIg",
       "rating": 4.8
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Barbie",
       "year": 2023,
-      "genres": ["Adventure", "Comedy", "Fantasy"],
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
       "description": "Barbie, qui vit dans le monde parfait de Barbieland, part à la découverte du monde réel.",
       "trailerUrl": "https://www.youtube.com/embed/pBk4NYhWNMM",
       "rating": 4.3
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Poor Things",
       "year": 2024,
-      "genres": ["Comedy", "Drama", "Romance"],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
       "description": "L'histoire de Bella Baxter, une jeune femme ramenée à la vie par un scientifique brillant mais non conventionnel.",
       "trailerUrl": "https://www.youtube.com/embed/RlbR5N6veqw",
       "rating": 4.6
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Parasite",
       "year": 2019,
-      "genres": ["Thriller", "Drama"],
+      "genres": [
+        "Thriller",
+        "Drama"
+      ],
       "description": "A poor family schemes to become employed by a wealthy family by infiltrating their household.",
       "trailerUrl": "https://www.youtube.com/embed/5xH0HfJHsaY",
       "rating": 4.6
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Joker",
       "year": 2019,
-      "genres": ["Crime", "Drama", "Thriller"],
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
       "description": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society.",
       "trailerUrl": "https://www.youtube.com/embed/zAGVQLHvwOY",
       "rating": 4.5
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "1917",
       "year": 2019,
-      "genres": ["Drama", "War"],
+      "genres": [
+        "Drama",
+        "War"
+      ],
       "description": "Two soldiers are assigned to deliver a message that will stop a deadly attack.",
       "trailerUrl": "https://www.youtube.com/embed/YqNYrYUiMfg",
       "rating": 4.7
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Once Upon a Time in Hollywood",
       "year": 2019,
-      "genres": ["Comedy", "Drama"],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
       "description": "A faded television actor and his stunt double strive to achieve fame and success in the final years of Hollywood's Golden Age.",
       "trailerUrl": "https://www.youtube.com/embed/ELeMaP8EPAA",
       "rating": 4.3
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "The Irishman",
       "year": 2019,
-      "genres": ["Biography", "Crime", "Drama"],
+      "genres": [
+        "Biography",
+        "Crime",
+        "Drama"
+      ],
       "description": "A mob hitman recalls his possible involvement with the slaying of Jimmy Hoffa.",
       "trailerUrl": "https://www.youtube.com/embed/WHXxVmeGQUc",
       "rating": 4.4
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "Tenet",
       "year": 2020,
-      "genres": ["Action", "Sci-Fi", "Thriller"],
+      "genres": [
+        "Action",
+        "Sci-Fi",
+        "Thriller"
+      ],
       "description": "Armed with only one word, Tenet, and fighting for the survival of the world, a protagonist journeys through a twilight world of international espionage.",
       "trailerUrl": "https://www.youtube.com/embed/L3pk_TBkihU",
       "rating": 4.2
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "Soul",
       "year": 2020,
-      "genres": ["Animation", "Adventure", "Comedy"],
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ],
       "description": "A musician who has lost his passion for music is transported out of his body and must find his way back.",
       "trailerUrl": "https://www.youtube.com/embed/xOsLIiBStEs",
       "rating": 4.8
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "Nomadland",
       "year": 2020,
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "description": "A woman in her sixties who, after losing everything in the Great Recession, embarks on a journey through the American West.",
       "trailerUrl": "https://www.youtube.com/embed/6sxCFZ8_d84",
       "rating": 4.5
     },
     {
-      "id": 17,
+      "id": "17",
       "title": "The Father",
       "year": 2020,
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "description": "A man refuses all assistance from his daughter as he ages.",
       "trailerUrl": "https://www.youtube.com/embed/4TZb7YfK-JI",
       "rating": 4.6
     },
     {
-      "id": 18,
+      "id": "18",
       "title": "Dune",
       "year": 2021,
-      "genres": ["Action", "Adventure", "Drama"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
       "description": "Feature adaptation of Frank Herbert's science fiction novel, about the son of a noble family entrusted with the protection of the most valuable asset and most vital element in the galaxy.",
       "trailerUrl": "https://www.youtube.com/embed/n9xhJrPXop4",
       "rating": 4.4
     },
     {
-      "id": 19,
+      "id": "19",
       "title": "No Time to Die",
       "year": 2021,
-      "genres": ["Action", "Adventure", "Thriller"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
       "description": "James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help.",
       "trailerUrl": "https://www.youtube.com/embed/BIhNsAtPbPI",
       "rating": 4.3
     },
     {
-      "id": 20,
+      "id": "20",
       "title": "Spider-Man: No Way Home",
       "year": 2021,
-      "genres": ["Action", "Adventure", "Fantasy"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
       "description": "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help.",
       "trailerUrl": "https://www.youtube.com/embed/JfVOs4VSpmA",
       "rating": 4.7
     },
     {
-      "id": 21,
+      "id": "21",
       "title": "The Power of the Dog",
       "year": 2021,
-      "genres": ["Drama", "Western"],
+      "genres": [
+        "Drama",
+        "Western"
+      ],
       "description": "Charismatic rancher Phil Burbank inspires fear and awe in those around him.",
       "trailerUrl": "https://www.youtube.com/embed/LRDPo0CHrko",
       "rating": 4.5
     },
     {
-      "id": 22,
+      "id": "22",
       "title": "CODA",
       "year": 2021,
-      "genres": ["Drama", "Music"],
+      "genres": [
+        "Drama",
+        "Music"
+      ],
       "description": "As a CODA (Child of Deaf Adults) Ruby is the only hearing person in her deaf family.",
       "trailerUrl": "https://www.youtube.com/embed/0pmfrE1YL4I",
       "rating": 4.6
     },
     {
-      "id": 23,
+      "id": "23",
       "title": "Everything Everywhere All at Once",
       "year": 2022,
-      "genres": ["Action", "Adventure", "Comedy"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
       "description": "An aging Chinese immigrant is swept up in an insane adventure.",
       "trailerUrl": "https://www.youtube.com/embed/wxN1T1uxQ2g",
       "rating": 4.8
     },
     {
-      "id": 24,
+      "id": "24",
       "title": "Top Gun: Maverick",
       "year": 2022,
-      "genres": ["Action", "Drama"],
+      "genres": [
+        "Action",
+        "Drama"
+      ],
       "description": "After more than thirty years of service as one of the Navy's top aviators, Pete Mitchell is where he belongs.",
       "trailerUrl": "https://www.youtube.com/embed/g4U4BQW9OEk",
       "rating": 4.7
     },
     {
-      "id": 25,
+      "id": "25",
       "title": "The Batman",
       "year": 2022,
-      "genres": ["Action", "Crime", "Drama"],
+      "genres": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
       "description": "When the Riddler, a sadistic serial killer, begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption.",
       "trailerUrl": "https://www.youtube.com/embed/mqqft2x_Aa4",
       "rating": 4.5
     },
     {
-      "id": 26,
+      "id": "26",
       "title": "Avatar: The Way of Water",
       "year": 2022,
-      "genres": ["Action", "Adventure", "Fantasy"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
       "description": "Jake Sully lives with his newfound family formed on the planet of Pandora.",
       "trailerUrl": "https://www.youtube.com/embed/d9MyW72ELq0",
       "rating": 4.6
     },
     {
-      "id": 27,
+      "id": "27",
       "title": "Black Panther: Wakanda Forever",
       "year": 2022,
-      "genres": ["Action", "Adventure", "Drama"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
       "description": "The people of Wakanda fight to protect their home from intervening world powers as they mourn the death of King T'Challa.",
       "trailerUrl": "https://www.youtube.com/embed/_Z3QKkl1WyM",
       "rating": 4.4
     },
     {
-      "id": 28,
+      "id": "28",
       "title": "Oppenheimer",
       "year": 2023,
-      "genres": ["Biography", "Drama", "History"],
+      "genres": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
       "description": "The story of J. Robert Oppenheimer, the physicist who led the Manhattan Project to develop the first atomic bomb.",
       "trailerUrl": "https://www.youtube.com/embed/uYPbbksJxIg",
       "rating": 4.8
     },
     {
-      "id": 29,
+      "id": "29",
       "title": "Carry-On",
       "year": 2024,
-      "genres": ["Action", "Thriller"],
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
       "description": "Un agent de la TSA est pris dans un complot criminel lors d'un vol commercial la veille de Noël.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.3
     },
     {
-      "id": 30,
+      "id": "30",
       "title": "Damsel",
       "year": 2024,
-      "genres": ["Action", "Fantasy", "Adventure"],
+      "genres": [
+        "Action",
+        "Fantasy",
+        "Adventure"
+      ],
       "description": "Une jeune femme accepte d'épouser un beau prince, mais découvre qu'il s'agit en réalité d'un piège : elle doit être sacrifiée pour rembourser une dette ancestrale.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.4
     },
     {
-      "id": 31,
+      "id": "31",
       "title": "The Union",
       "year": 2024,
-      "genres": ["Action", "Comedy"],
+      "genres": [
+        "Action",
+        "Comedy"
+      ],
       "description": "Une ancienne agente de la CIA est forcée de reprendre du service pour une dernière mission.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.2
     },
     {
-      "id": 32,
+      "id": "32",
       "title": "Rebel Ridge",
       "year": 2024,
-      "genres": ["Action", "Thriller"],
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
       "description": "Un vétéran du Sud des États-Unis affronte l'injustice systémique dans une histoire à haute tension.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.1
     },
     {
-      "id": 33,
+      "id": "33",
       "title": "Lift",
       "year": 2024,
-      "genres": ["Action", "Crime", "Thriller"],
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
       "description": "Une équipe de voleurs internationaux tente de dérober 500 millions de dollars d'or dans un avion à 40 000 pieds d'altitude.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 34,
+      "id": "34",
       "title": "Beverly Hills Cop: Axel F",
       "year": 2024,
-      "genres": ["Action", "Comedy", "Crime"],
+      "genres": [
+        "Action",
+        "Comedy",
+        "Crime"
+      ],
       "description": "Axel Foley revient à Beverly Hills pour enquêter sur la mort de son vieil ami et retrouver sa fille.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.2
     },
     {
-      "id": 35,
+      "id": "35",
       "title": "A Family Affair",
       "year": 2024,
-      "genres": ["Comedy", "Romance"],
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
       "description": "Une histoire d'amour inattendue bouleverse une famille de manière surprenante et humoristique.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.1
     },
     {
-      "id": 36,
+      "id": "36",
       "title": "Atlas",
       "year": 2024,
-      "genres": ["Sci-Fi", "Action"],
+      "genres": [
+        "Sci-Fi",
+        "Action"
+      ],
       "description": "Une brillante analyste de données doit affronter une IA qu'elle a créée pour empêcher une guerre catastrophique.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.3
     },
     {
-      "id": 37,
+      "id": "37",
       "title": "Our Little Secret",
       "year": 2024,
-      "genres": ["Drama", "Thriller"],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
       "description": "Un secret longtemps gardé menace de détruire la vie parfaite d'une famille.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 38,
+      "id": "38",
       "title": "Trigger Warning",
       "year": 2024,
-      "genres": ["Action", "Thriller"],
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
       "description": "Une ancienne Forces Spéciales hérite du bar de son grand-père et se retrouve confrontée à un gang criminel local.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.1
@@ -336,320 +465,435 @@
   ],
   "series": [
     {
-      "id": 1,
+      "id": "1",
       "title": "The Last of Us",
       "year": 2023,
-      "genres": ["Action", "Adventure", "Drama"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
       "description": "Dans un monde post-apocalyptique, un survivant endurci doit escorter une adolescente qui pourrait être le salut de l'humanité.",
       "trailerUrl": "https://www.youtube.com/embed/uLtkt8BonwM",
       "rating": 4.9,
       "seasons": 1
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "House of the Dragon",
       "year": 2022,
-      "genres": ["Action", "Adventure", "Drama"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
       "description": "L'histoire de la famille Targaryen, 200 ans avant les événements de Game of Thrones.",
       "trailerUrl": "https://www.youtube.com/embed/DotnJ7tTA34",
       "rating": 4.7,
       "seasons": 1
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "The Queen's Gambit",
       "year": 2020,
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "description": "Orphaned at the tender age of nine, prodigious introvert Beth Harmon discovers and masters the game of chess.",
       "trailerUrl": "https://www.youtube.com/embed/CDrieqwSdgI",
       "rating": 4.9,
       "seasons": 1
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "The Mandalorian",
       "year": 2019,
-      "genres": ["Action", "Adventure", "Fantasy"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
       "description": "The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.",
       "trailerUrl": "https://www.youtube.com/embed/aOC8E8z_ifw",
       "rating": 4.8,
       "seasons": 3
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "The Witcher",
       "year": 2019,
-      "genres": ["Action", "Adventure", "Drama"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
       "description": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
       "trailerUrl": "https://www.youtube.com/embed/ndl1W4ltcmg",
       "rating": 4.7,
       "seasons": 3
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Bridgerton",
       "year": 2020,
-      "genres": ["Drama", "Romance"],
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
       "description": "Wealth, lust, and betrayal set in the backdrop of Regency-era England, seen through the eyes of the powerful Bridgerton family.",
       "trailerUrl": "https://www.youtube.com/embed/gpv7ayf_tyE",
       "rating": 4.6,
       "seasons": 2
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "The Crown",
       "year": 2016,
-      "genres": ["Biography", "Drama", "History"],
+      "genres": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
       "description": "Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the twentieth century.",
       "trailerUrl": "https://www.youtube.com/embed/JWtnJjn6ng0",
       "rating": 4.8,
       "seasons": 5
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Stranger Things",
       "year": 2016,
-      "genres": ["Drama", "Fantasy", "Horror"],
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Horror"
+      ],
       "description": "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces in order to get him back.",
       "trailerUrl": "https://www.youtube.com/embed/b9EkMc79ZSU",
       "rating": 4.7,
       "seasons": 4
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "The Boys",
       "year": 2019,
-      "genres": ["Action", "Comedy", "Crime"],
+      "genres": [
+        "Action",
+        "Comedy",
+        "Crime"
+      ],
       "description": "A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers.",
       "trailerUrl": "https://www.youtube.com/embed/MiQ1eP2KpR8",
       "rating": 4.6,
       "seasons": 3
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "The Umbrella Academy",
       "year": 2019,
-      "genres": ["Action", "Adventure", "Comedy"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
       "description": "A family of former child heroes, now grown apart, must reunite to continue to protect the world.",
       "trailerUrl": "https://www.youtube.com/embed/0DAmWHxeoKw",
       "rating": 4.5,
       "seasons": 3
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Loki",
       "year": 2021,
-      "genres": ["Action", "Adventure", "Fantasy"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
       "description": "The mercurial villain Loki resumes his role as the God of Mischief in a new series that takes place after the events of Avengers: Endgame.",
       "trailerUrl": "https://www.youtube.com/embed/nW948Va-l10",
       "rating": 4.7,
       "seasons": 1
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "WandaVision",
       "year": 2021,
-      "genres": ["Action", "Comedy", "Drama"],
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama"
+      ],
       "description": "Blends the style of classic sitcoms with the MCU in which Wanda Maximoff and Vision - two super-powered beings living their ideal suburban lives - begin to suspect that everything is not as it seems.",
       "trailerUrl": "https://www.youtube.com/embed/sj9J2ecsSpo",
       "rating": 4.6,
       "seasons": 1
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "Squid Game",
       "year": 2021,
-      "genres": ["Action", "Drama", "Mystery"],
+      "genres": [
+        "Action",
+        "Drama",
+        "Mystery"
+      ],
       "description": "Hundreds of cash-strapped contestants accept an invitation to compete in children's games for a tempting prize, but the stakes are deadly.",
       "trailerUrl": "https://www.youtube.com/embed/oqxAJKy0ii4",
       "rating": 4.8,
       "seasons": 1
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "Ted Lasso",
       "year": 2020,
-      "genres": ["Comedy", "Drama", "Sport"],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Sport"
+      ],
       "description": "Follows US American football coach Ted Lasso heading to the UK to manage a struggling London football team in the top flight of English football.",
       "trailerUrl": "https://www.youtube.com/embed/3u7EIiohs6U",
       "rating": 4.9,
       "seasons": 3
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "Succession",
       "year": 2018,
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "description": "Follows the Roy family, known for controlling the biggest media and entertainment company in the world.",
       "trailerUrl": "https://www.youtube.com/embed/OzYxJV_rmE8",
       "rating": 4.8,
       "seasons": 4
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "Euphoria",
       "year": 2019,
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "description": "A look at life for a group of high school students as they grapple with issues of drugs, sex, and violence.",
       "trailerUrl": "https://www.youtube.com/embed/ziMUD0_TTg0",
       "rating": 4.6,
       "seasons": 2
     },
     {
-      "id": 17,
+      "id": "17",
       "title": "The Bear",
       "year": 2022,
-      "genres": ["Comedy", "Drama"],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
       "description": "A young chef from the fine dining world returns to Chicago to run his family's sandwich shop.",
       "trailerUrl": "https://www.youtube.com/embed/YrZbUS0MaY4",
       "rating": 4.7,
       "seasons": 1
     },
     {
-      "id": 18,
+      "id": "18",
       "title": "Severance",
       "year": 2022,
-      "genres": ["Drama", "Mystery", "Sci-Fi"],
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Sci-Fi"
+      ],
       "description": "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives.",
       "trailerUrl": "https://www.youtube.com/embed/xEQP4VVuyrY",
       "rating": 4.8,
       "seasons": 1
     },
     {
-      "id": 19,
+      "id": "19",
       "title": "Wednesday",
       "year": 2022,
-      "genres": ["Comedy", "Crime", "Family"],
+      "genres": [
+        "Comedy",
+        "Crime",
+        "Family"
+      ],
       "description": "Follows Wednesday Addams' years as a student, when she attempts to master her emerging psychic ability.",
       "trailerUrl": "https://www.youtube.com/embed/Q73UhUTs6y0",
       "rating": 4.6,
       "seasons": 1
     },
     {
-      "id": 20,
+      "id": "20",
       "title": "The Sandman",
       "year": 2022,
-      "genres": ["Drama", "Fantasy", "Horror"],
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Horror"
+      ],
       "description": "Upon escaping after decades of imprisonment by a mortal wizard, Dream, the personification of dreams, sets about to reclaim his lost equipment.",
       "trailerUrl": "https://www.youtube.com/embed/83ClbRPRDXU",
       "rating": 4.7,
       "seasons": 1
     },
     {
-      "id": 21,
+      "id": "21",
       "title": "Un Jour",
       "year": 2024,
-      "genres": ["Drama", "Romance"],
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
       "description": "L'histoire de Dexter et Emma, qui se retrouvent chaque année le même jour pendant plusieurs décennies.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.7,
       "seasons": 1
     },
     {
-      "id": 22,
+      "id": "22",
       "title": "Ripley",
       "year": 2024,
-      "genres": ["Crime", "Drama", "Thriller"],
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
       "description": "Un escroc est embauché par un riche homme d'affaires pour convaincre son fils de revenir en Amérique.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.6,
       "seasons": 1
     },
     {
-      "id": 23,
+      "id": "23",
       "title": "SupraCell",
       "year": 2024,
-      "genres": ["Action", "Crime", "Drama"],
+      "genres": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
       "description": "Une unité d'élite de la police infiltre un réseau criminel sophistiqué.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.5,
       "seasons": 1
     },
     {
-      "id": 24,
+      "id": "24",
       "title": "Kaos",
       "year": 2024,
-      "genres": ["Fantasy", "Drama"],
+      "genres": [
+        "Fantasy",
+        "Drama"
+      ],
       "description": "Une réinterprétation moderne et audacieuse de la mythologie grecque.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.4,
       "seasons": 1
     },
     {
-      "id": 25,
+      "id": "25",
       "title": "The Gentlemen",
       "year": 2024,
-      "genres": ["Crime", "Drama"],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
       "description": "Un aristocrate hérite d'un domaine familial, découvrant qu'il fait partie d'un empire du cannabis.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.8,
       "seasons": 1
     },
     {
-      "id": 26,
+      "id": "26",
       "title": "Mon Petit Renne",
       "year": 2024,
-      "genres": ["Drama", "Family"],
+      "genres": [
+        "Drama",
+        "Family"
+      ],
       "description": "Une histoire touchante sur la relation entre une jeune fille et un renne dans le Grand Nord.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.5,
       "seasons": 1
     },
     {
-      "id": 27,
+      "id": "27",
       "title": "Espion à l'Ancienne",
       "year": 2024,
-      "genres": ["Comedy", "Spy", "Drama"],
+      "genres": [
+        "Comedy",
+        "Spy",
+        "Drama"
+      ],
       "description": "Un ancien espion de la guerre froide sort de sa retraite pour une dernière mission.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.3,
       "seasons": 1
     },
     {
-      "id": 28,
+      "id": "28",
       "title": "Avatar: Le Dernier Maître de l'Air",
       "year": 2024,
-      "genres": ["Action", "Adventure", "Fantasy"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
       "description": "L'adaptation en live-action de la série animée, suivant Aang, le dernier Avatar, dans sa quête pour maîtriser les quatre éléments.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.6,
       "seasons": 1
     },
     {
-      "id": 29,
+      "id": "29",
       "title": "Griselda",
       "year": 2024,
-      "genres": ["Crime", "Drama", "Biography"],
+      "genres": [
+        "Crime",
+        "Drama",
+        "Biography"
+      ],
       "description": "L'histoire vraie de Griselda Blanco, qui a créé l'un des cartels les plus rentables de l'histoire.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.7,
       "seasons": 1
     },
     {
-      "id": 30,
+      "id": "30",
       "title": "American Nightmare",
       "year": 2024,
-      "genres": ["Horror", "Thriller"],
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
       "description": "Une nouvelle histoire dans l'univers de The Purge, explorant les conséquences d'une nuit où tous les crimes sont légaux.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.4,
       "seasons": 1
     },
     {
-      "id": 31,
+      "id": "31",
       "title": "Le Problème à 3 Corps",
       "year": 2024,
-      "genres": ["Sci-Fi", "Drama", "Mystery"],
+      "genres": [
+        "Sci-Fi",
+        "Drama",
+        "Mystery"
+      ],
       "description": "Des scientifiques font face à une menace extraterrestre qui remet en question les fondements de la science humaine.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.8,
       "seasons": 1
     },
     {
-      "id": 32,
+      "id": "32",
       "title": "Berlin",
       "year": 2024,
-      "genres": ["Crime", "Drama", "Thriller"],
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
       "description": "Un prequel de La Casa de Papel centré sur le personnage énigmatique de Berlin et ses braquages les plus audacieux.",
       "trailerUrl": "https://www.youtube.com/embed/placeholder",
       "rating": 4.5,
@@ -658,42 +902,42 @@
   ],
   "comments": [
     {
-      "id": 1,
+      "id": "1",
       "movieId": 1,
       "author": "John Doe",
       "text": "Un classique incontournable, j'adore !",
       "timestamp": "2025-02-11T10:00:00"
     },
     {
-      "id": 2,
+      "id": "2",
       "movieId": 1,
       "author": "Jane Smith",
       "text": "Effets spéciaux incroyables pour l'époque !",
       "timestamp": "2025-02-11T10:05:00"
     },
     {
-      "id": 3,
+      "id": "3",
       "movieId": 2,
       "author": "Alice",
       "text": "Mon film préféré de Nolan, la scène du couloir est dingue !",
       "timestamp": "2025-02-11T10:10:00"
     },
     {
-      "id": 4,
+      "id": "4",
       "movieId": 5,
       "author": "Bob",
       "text": "Dialogue culte et B.O. magistrale.",
       "timestamp": "2025-02-11T10:15:00"
     },
     {
-      "id": 5,
+      "id": "5",
       "movieId": 6,
       "author": "Sophie",
       "text": "Une performance exceptionnelle de Cillian Murphy, le film est un chef-d'œuvre !",
       "timestamp": "2024-02-15T14:30:00"
     },
     {
-      "id": 6,
+      "id": "6",
       "movieId": 7,
       "author": "Alice",
       "text": "Un film surprenant et intelligent qui dépasse toutes les attentes !",
@@ -702,11 +946,11 @@
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Alice",
       "bio": "Étudiante passionnée de ciné",
       "email": "Alice@1.net",
-       "profiles": [
+      "profiles": [
         {
           "id": 1,
           "name": "Alice",
@@ -714,8 +958,23 @@
           "email": "",
           "avatar": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/31152e75-8fca-497f-bef6-aa065dd7cb67/original=true,quality=90/8A28H215PTYKEQ64TD8EEK2MV0.jpeg",
           "lang": "fr",
-          "watchlist": [2, 4],
-          "favorites": [1]
+          "watchlist": [
+            {
+              "type": "movie",
+              "id": 4
+            },
+            {
+              "type": "movie",
+              "id": 2
+            },
+            {
+              "type": "movie",
+              "id": 6
+            }
+          ],
+          "favorites": [
+            1
+          ]
         },
         {
           "id": 2,
@@ -730,7 +989,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Bob",
       "bio": "Développeur & grand cinéphile",
       "email": "bob@2.net",
@@ -742,13 +1001,22 @@
           "email": "",
           "avatar": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/31152e75-8fca-497f-bef6-aa065dd7cb67/original=true,quality=90/8A28H215PTYKEQ64TD8EEK2MV0.jpeg",
           "lang": "fr",
-          "watchlist": [1, 5],
+          "watchlist": [
+            {
+              "type": "movie",
+              "id": 1
+            },
+            {
+              "type": "movie",
+              "id": 5
+            }
+          ],
           "favorites": []
         }
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Sophie",
       "bio": "Critique de cinéma amateur",
       "email": "sophie@3.net",
@@ -760,27 +1028,53 @@
           "email": "",
           "avatar": "https://example.com/avatar3.jpg",
           "lang": "fr",
-          "watchlist": [6, 7, 8],
-          "favorites": [6]
+          "watchlist": [
+            {
+              "type": "movie",
+              "id": 6
+            },
+            {
+              "type": "movie",
+              "id": 7
+            },
+            {
+              "type": "movie",
+              "id": 8
+            }
+          ],
+          "favorites": [
+            6
+          ]
         }
       ]
     }
   ],
   "recommendations": [
     {
-      "id": 1,
+      "id": "1",
       "movieId": 1,
-      "recommendedMovieIds": [2, 3]
+      "recommendedMovieIds": [
+        2,
+        3
+      ]
     },
     {
-      "id": 2,
+      "id": "2",
       "movieId": 3,
-      "recommendedMovieIds": [1, 2, 4]
+      "recommendedMovieIds": [
+        1,
+        2,
+        4
+      ]
     },
     {
-      "id": 3,
+      "id": "3",
       "movieId": 6,
-      "recommendedMovieIds": [8, 4, 2]
+      "recommendedMovieIds": [
+        8,
+        4,
+        2
+      ]
     }
   ],
   "about": {
