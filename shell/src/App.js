@@ -5,6 +5,7 @@ const Header = React.lazy(() => import('header/Header'));
 const Breadcrumb = React.lazy(() => import('breadcrumb/Breadcrumb'));
 const Catalogue = React.lazy(() => import('catalogue/Catalogue'));
 const SearchBar = React.lazy(() => import('searchbar/SearchBar'));
+const WatchList = React.lazy(() => import('watchlist/Watchlist'));
 
 const App = () => {
   return (
@@ -23,9 +24,13 @@ const App = () => {
         <Breadcrumb />
       </Suspense>
 
+
       <main className="main-content">
         <h2 className="welcome-title">Bienvenue sur Efreiflix</h2>
         <p className="main-description">Contenu principal de l'application...</p>
+        <Suspense fallback={<div className="loading">Chargement de la watchlist...</div>}>
+          <WatchList />
+        </Suspense>
 
         <Suspense fallback={<div className="loading">Chargement du catalogue...</div>}>
           <Catalogue />

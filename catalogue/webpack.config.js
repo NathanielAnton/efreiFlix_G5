@@ -13,7 +13,8 @@ const getRemoteEntryUrl = (appName) => {
   }
   const ports = {
     header: 3001,
-    skeleton: 3002
+    skeleton: 3002,
+    ficheProduit: 3005 // added ficheProduit port for dev mode
   };
   return `http://localhost:${ports[appName]}/remoteEntry.js`;
 };
@@ -75,4 +76,4 @@ module.exports = {
       template: "./public/index.html",
     }),
   ],
-}; 
+};
