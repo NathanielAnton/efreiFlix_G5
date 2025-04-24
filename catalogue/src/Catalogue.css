@@ -19,7 +19,7 @@
 .movies-row {
   display: flex;
   overflow-x: hidden;
-  padding: 20px 0;
+  padding: 20px 0 20px 16px; /* Ajoute du padding à gauche pour éviter que l'animation fasse sortir la carte */
   scroll-behavior: smooth;
   margin: 0 -20px;
 }
@@ -66,7 +66,7 @@
 .movie-card {
   position: relative;
   min-width: 200px;
-  margin-right: 8px;
+  margin-right: 24px; /* Augmente l'espacement entre les cartes pour éviter le chevauchement lors du scale */
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -159,6 +159,7 @@
 @media (max-width: 768px) {
   .movie-card {
     min-width: 150px;
+    margin-right: 16px;
   }
   
   .movie-poster {
@@ -168,4 +169,4 @@
   .catalogue-title {
     font-size: 20px;
   }
-} 
+}

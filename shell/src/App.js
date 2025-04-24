@@ -6,6 +6,7 @@ import VueWrapper from './VueWrapper.jsx';
 const Header = React.lazy(() => import('header/Header'));
 const Catalogue = React.lazy(() => import('catalogue/Catalogue'));
 const SearchBar = React.lazy(() => import('searchbar/SearchBar'));
+const WatchList = React.lazy(() => import('watchlist/Watchlist'));
 const Skeleton = React.lazy(() => import('skeleton/Skeleton'));
 
 // Import direct du composant Vue Breadcrumb
@@ -36,12 +37,21 @@ const App = () => {
         </Suspense>
       </div>
 
+      <Suspense fallback={<div className="loading">Chargement du breadcrumb...</div>}>
+        <Breadcrumb />
+      </Suspense>
+
+
       <main className="main-content">
 				<Suspense fallback={<div className="loading">Chargement du breadcrumb...</div>}>
         	<Breadcrumb />
 				</Suspense>
 
         <h2 className="welcome-title">Bienvenue sur Efreiflix</h2>
+        <p className="main-description">Contenu principal de l'application...</p>
+        <Suspense fallback={<div className="loading">Chargement de la watchlist...</div>}>
+          <WatchList />
+        </Suspense>
         <p className="main-description">
           Contenu principal de l'application...
         </p>
