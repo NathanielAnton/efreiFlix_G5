@@ -1,4 +1,13 @@
 {
+  "name": "efreiflix-monorepo",
+  "version": "1.0.0",
+  "description": "Efreiflix Micro-Frontend Application",
+  "scripts": {
+    "start": "node start-all.js",
+    "install-all": "node -e \"const { spawnSync } = require('child_process'); const fs = require('fs'); const path = require('path'); fs.readdirSync('.').filter(f => fs.statSync(f).isDirectory() && fs.existsSync(path.join(f, 'package.json'))).forEach(dir => { console.log('Installing dependencies for ' + dir); spawnSync('npm', ['install'], { cwd: dir, stdio: 'inherit', shell: true }); });\""
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",

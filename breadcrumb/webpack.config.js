@@ -1,19 +1,25 @@
+const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { ModuleFederationPlugin } = require("webpack").container;
+const path = require('path');
+const { dependencies } = require('./package.json');
+const { VueLoaderPlugin } = require('vue-loader');
 
 const isProd = process.env.NODE_ENV === 'production';
 const prodUrl = 'https://efrei-breadcrumb.vercel.app/';
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: './src/main.ts',
   mode: process.env.NODE_ENV || "development",
   output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
     publicPath: isProd ? prodUrl : 'auto',
-    filename: '[name].[contenthash].js'
   },
   devServer: {
-    port: 3004,
-    hot: true,
+    port: 3004, // Changed from 5000 to 3004 to match what the shell is expecting
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
@@ -24,41 +30,52 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
-        loader: "babel-loader",
+        test: /\.vue$/,
+        loader: 'vue-loader',
         exclude: /node_modules/,
-        options: {
-          presets: ["@babel/preset-react"],
-        },
+      },
+      {
+        test: /\.(js|jsx|ts|tsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env',
+              ['@babel/preset-typescript', { allExtensions: true, isTSX: true }]
+            ]
+          }
+        }
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
+        use: ['style-loader', 'css-loader'],
       },
-    ],
+      // Ajout de la règle pour les fichiers SVG
+      {
+        test: /\.svg$/,
+        type: 'asset/inline'
+      }
+    ]
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "breadcrumb",
-      filename: "remoteEntry.js",
+      name: 'breadcrumb',
+      filename: 'remoteEntry.js',
       exposes: {
-        "./Breadcrumb": "./src/Breadcrumb",
+        './Breadcrumb': './src/Breadcrumb.vue',
       },
       shared: {
-        react: { 
+        vue: {
           singleton: true,
-          requiredVersion: false,
+          requiredVersion: dependencies.vue,
           eager: true
         },
-        "react-dom": { 
-          singleton: true,
-          requiredVersion: false,
-          eager: true
-        }
       },
     }),
-    new HtmlWebpackPlugin({
-      template: "./public/index.html",
-    }),
+    new VueLoaderPlugin(),
   ],
-}; 
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue']
+  },
+};
